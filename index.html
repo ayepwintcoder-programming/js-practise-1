@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js practise</title>
+<link href=""
+
+</head>
+<body>
+    <p id="second"></p>
+<script>
+    document.getElementById('second').innerHTML = 'this one is write by no using button';
+</script>
+
+<script>
+    alert('this site is danger');
+</script>
+
+<script>
+    document.write(85+25);
+</script>
+
+<hr>
+    <p id="demo">result will show here</p>
+<!--js can also use with button-->
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">click me to display current date</button>
+
+    <!-- if you set the Numerical characters in '' they will be text -->
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 5+6">click me to see the answer of 5+6?</button>
+
+    <!--js also can use to change css style-->
+    <!--in js css of dash are must to remove the dash and instead write before dash the start word with capital letter -->
+    <button type="button" onclick="document.getElementById('demo').style.textAlign='center'">Click Me to move the text to center</button>
+
+    <button type="button" onclick="document.getElementById('demo').style.color='red'">click me to change the text color to red</button>
+
+    <button type="button" onclick="document.write(56+6)">click me to show the answer of 56+6 and remove all html element</button>
+
+
+
+
+</html>
