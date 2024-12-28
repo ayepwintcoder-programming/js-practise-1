@@ -62,4 +62,18 @@ var a=6;//this is initialize a so 6 will not change because initialize and hoist
 <hr id="hehe" style="display:none;">
 <button type="button" onclick="document.getElementById('hehe').style.display ='block'">click to show unexpecting😐</button><button type="button" onclick="document.getElementById('hehe').style.display='none'">Undo</button>
 <center id="eiff">about let operator</center>
+<button type="button" id="bu">change</button>
+
+<script>
+    const eiffElement = document.getElementById('eiff');
+    const button = document.getElementById('bu');
+
+    button.addEventListener('click', () => {
+        eiffElement.style.fontSize = '35px';
+        eiffElement.style.marginTop = '25px';
+    });
+</script>
+<script>
+
+</script>
 </html>
