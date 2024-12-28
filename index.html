@@ -36,7 +36,30 @@
 
     <button type="button" onclick="document.write(56+6)">click me to show the answer of 56+6 and remove all html element</button>
 
+<hr>
+<center id="eif">about var operator</center>
 
+<button type="button" onclick="document.getElementById('eif').style.fontSize = '60px' ">click to change the font-size of header</button>
+<p id="al"></p>
+<script>
+    //var don't have block scope so it can be redeclare,reassign,hosited and binds
+    var a =3;
+    var a = 5;//this called declare 
+    a = 9;//this called assign
 
+ /*this called variables*/
+ var a;//var can hoisted anywere after declare or before declare
+ 
+ document.getElementById('al').innerHTML = a;
 
+/*var can also hoisted here
+example-
+var a;
+*/
+var a=6;//this is initialize a so 6 will not change because initialize and hoisted are not same
+
+</script>
+<hr id="hehe" style="display:none;">
+<button type="button" onclick="document.getElementById('hehe').style.display ='block'">click to show unexpecting😐</button><button type="button" onclick="document.getElementById('hehe').style.display='none'">Undo</button>
+<center id="eiff">about let operator</center>
 </html>
