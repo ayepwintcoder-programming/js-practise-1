@@ -40,6 +40,8 @@
 <center id="eif">about var operator</center>
 
 <button type="button" onclick="document.getElementById('eif').style.fontSize = '60px' ">click to change the font-size of header</button>
+
+
 <p id="al"></p>
 <script>
     //var don't have block scope so it can be redeclare,reassign,hosited and binds
@@ -59,6 +61,8 @@ var a;
 var a=6;//this is initialize a so 6 will not change because initialize and hoisted are not same
 
 </script>
+
+
 <hr id="hehe" style="display:none;">
 <button type="button" onclick="document.getElementById('hehe').style.display ='block'">click to show unexpecting😐</button><button type="button" onclick="document.getElementById('hehe').style.display='none'">Undo</button>
 <center id="eiff">about let operator</center>
@@ -73,7 +77,22 @@ var a=6;//this is initialize a so 6 will not change because initialize and hoist
         eiffElement.style.marginTop = '25px';
     });
 </script>
+
+<p id="let"></p>
 <script>
+    //let have block scope so if you want to redeclare or reassign you have to create another scope by using {}
+    let a;//variable of let and const are always hoisted at the top
+    let a =3;
+    //let a = 5;let can't redeclare 
+    //a = 9;//let can't redeclare or reassign in a same scope
+
+ 
+ document.getElementById('al').innerHTML = a;
+
+
+var a=6;//this is initialize a so 6 will not change because initialize and hoisted are not same
 
 </script>
+
+
 </html>
