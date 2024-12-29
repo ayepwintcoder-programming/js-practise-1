@@ -50,7 +50,7 @@
     a = 9;//this called assign
 
  /*this called variables*/
- var a;//var can hoisted anywere after declare or before declare
+ var a;//var can hoisted variable anywere after declare or before declare
  
  document.getElementById('al').innerHTML = a;
 
@@ -77,22 +77,52 @@ var a=6;//this is initialize a so 6 will not change because initialize and hoist
         eiffElement.style.marginTop = '25px';
     });
 </script>
-
-<p id="let"></p>
+<p id="let">about let</p>
 <script>
-    //let have block scope so if you want to redeclare or reassign you have to create another scope by using {}
-    let a;//variable of let and const are always hoisted at the top
-    let a =3;
-    //let a = 5;let can't redeclare 
-    //a = 9;//let can't redeclare or reassign in a same scope
-
- 
- document.getElementById('al').innerHTML = a;
-
-
-var a=6;//this is initialize a so 6 will not change because initialize and hoisted are not same
-
+    //let b;(error) let and const don't need to defind variable
+let b =3;
+//let b = 4;(error) let can't redeclare in a same scope
+    b = 4;//but let can reassign in a same scope
+    {
+        let b = 5;//let can redeclare in another scope but you have to output in a same scope
+    }
+document.getElementById('let').innerHTML = b ;//this called output
 </script>
 
 
+<p id="constant value">about const</p>
+
+<script>
+    /*this called constant value*/{
+    //const c;(error) const and let don't need to defind variable
+    const c = 5;
+    //const c = 6;(error) const can't redeclare in a same scope
+    //c = 7;(error) const also can't reassign in a same scope
+
+    {
+        const c = 4;//const can redeclare in another scope
+       // c = 5;(error) 
+    }
+
+    /*{
+       c = 5;const can't reassign in another
+    }*/
+document.getElementById('constant value').innerHTML = c;}
+</script>
+
+<p id="constant array"></p>
+
+<script>
+    /*this called constant array*/{
+    const town = ["Monywa","Yangon","Mandalay"];//create an array
+
+    town[1]/*in js number are starts from 0*/ = "Nay Pyi Taw";//change an element
+
+    town.push('in Myanmar')//add more element at the end
+
+document.getElementById('constant array').innerHTML = "These are some famous towns" +" "+ town+".";
+}
+
+
+</script>
 </html>
