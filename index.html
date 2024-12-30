@@ -125,4 +125,55 @@ document.getElementById('constant array').innerHTML = "These are some famous tow
 
 
 </script>
+
+<p id="const object"></p>
+
+<script>
+    /*this called const object */
+    const car = {type:"fiat", color:"red", model:"500"};
+
+    car.type = "fkldsf";//change a property
+
+    car.owner= "me";//add new property
+
+    document.getElementById("const object").innerHTML = "This car type is"+" "+car.type;
+</script>
+
+<p id="error"></p>
+
+<script>
+    /*you can define error code like this*/
+    try{
+        const car= {type:"fiat", color:"red",model:"500"};
+        car = {type:"lskdf", color:"blue", model:"800"};
+    }
+    catch (err){
+        document.getElementById(error).innerHTML = err;
+    }
+</script>
+<center><h1>Operators</h1></center>
+
+
+<p id="mathpow"></p>
+<script>
+    let e = 5;
+    let d = Math.pow(e,3);//math.pow is same as **
+
+    /*let d = 5 ** 3;*/
+    document.getElementById('mathpow').innerHTML = "the answer of the 5 ** 3 is"+" "+d;
+</script>
+
+<p id="precedence"></p>
+<p id="precedence2"></p>
+<script>
+
+    //in js Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-).
+    document.getElementById('precedence').innerHTML = 50 + 3 * 3;
+    {
+            //When many operations have the same precedence (like addition and subtraction or multiplication and division), they are computed from left to right:
+
+    document.getElementById('precedence2').innerHTML = 50 - 3 + 3;
+    }
+</script>
+</body>
 </html>
