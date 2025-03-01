@@ -349,7 +349,7 @@ document.getElementById('constant array').innerHTML = "These are some famous tow
 </script>
 <br>
 <br>
-!= (not equal to)
+!== (not equal to)
 <br>
 <script>
     //not equal value and type
@@ -357,6 +357,26 @@ document.getElementById('constant array').innerHTML = "These are some famous tow
     let lksdf = 550;
     document.write(ksju !== lksdf);
 </script>
+<hr>
 
+<center>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</center>
+<br>
+<br>
+<pre>let ty = 16 + 4 + "vovo"
+result</pre>
+<script>
+    let ty = 16 + 4 + "vovo";
+    document.write(ty);
+
+</script>
+<br>
+<br>
+<pre>let vre = "vovo" + 16 + 4
+    result 
+</pre>
+<script>
+    let vre = "vovo" + 16 + 4;
+    document.write(vre);
+</script>
 </body>
 </html>
